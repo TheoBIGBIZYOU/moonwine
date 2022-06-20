@@ -1,0 +1,44 @@
+<div class="overlay"></div>
+<section class="siteAccess">
+    <div class="siteAccess__container">
+        <div class="siteAccess__container__logo">
+                <img src="{{ 'mobileLogo.svg' | asset_url }}" alt="{{ shop.name }}">
+        </div>
+        <div class="siteAccess__container__title">
+            <h1 class="title">CONFIRMEZ VOTRE âGE</h1>
+            <p>En entrant sur ce site, je certifie avoir l’âge légal pour consommer de l’alcool dans mon pays de résidence.</p>
+        </div>
+        <div class="siteAccess__container__form">
+            <div class="siteAccess__container__form__input">
+                <input id="checkboxAccess" type="checkbox">
+                <label for="scales">Je confirme avoir + de 18 ans</label>
+            </div>
+            <div class="siteAccess__container__form__button">
+                <a class="big" href="#">Entrer</a>
+                <a href="https://google.com">J'ai moins de 18 ans</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% javascript %}
+    if(document.cookie.indexOf('enableAccess') === -1){
+        document.querySelector("#shopify-section-siteAccess").classList.add("active");
+        let btnAccept = document.querySelector(".big");
+        btnAccept.addEventListener("click",function(){
+            if(document.querySelector('#checkboxAccess').checked){
+                let date = new Date();
+                date.setTime(date.getTime()+(2*60*60*1000));
+                document.querySelector("#shopify-section-siteAccess").classList.remove("active");
+                document.cookie = "enableAccess=yes; expires=" + date.toGMTString() + ";path=/";
+            }
+        });
+    }
+{% endjavascript %}
+
+{% schema %}
+  {
+    "name": "site Access",
+    "settings": []
+  }
+{% endschema %}

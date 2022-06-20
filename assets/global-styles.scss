@@ -1,0 +1,44 @@
+// COULEURS
+$secondary: #E2DAC3;
+$white: #F8F8F8;
+$black: #242424;
+$green: #114635;
+
+
+// FONT SIZE
+
+:root {
+    --title: calc(5rem + 0.5vw);
+    --subtitle: 1.6rem;
+    --card_title: 2.4rem;
+    --paragraph: 1.3rem;
+}
+
+// GENERAL
+$margin_aside: 16rem;
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.btn {
+    border-radius: 100vmax;
+    padding: 1.5rem 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    // FONT SIZE
+    :root {
+        --title: calc(3rem + 0.5vw);
+    }
+}

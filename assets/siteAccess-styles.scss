@@ -1,0 +1,108 @@
+#shopify-section-siteAccess{
+    display: none;
+    div.overlay{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #DADADA;
+        opacity: .8;
+        z-index: 100;
+    }
+    .siteAccess{
+        padding: 7rem 8rem;
+        background-color: white;
+        border-radius: 6rem;
+        width: 90%;
+        max-width: 55rem;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 100;
+        &__container{
+            text-align: center;
+            &__title{
+                margin: 4rem 0;
+                h1 {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 3.6rem;
+                }
+                p{
+                    font-weight: normal;
+                    font-size: 2rem;
+                }
+            }
+            &__form{
+                &__input{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    input{
+                        color: $green;
+                        border-radius: 4px;
+                        width: 2rem;
+                        height: 2rem;
+                        margin-right: 2rem;
+                    }
+                    label{
+                        font-size: 2rem;
+                        color: $green;
+                        font-family: 'Poppins', sans-serif;
+                    }
+                }
+                &__button{
+                    a{
+                        color: $green;
+                        text-decoration: underline;
+                        font-size: 1.4rem;
+                        &.big{
+                            text-decoration: none;
+                            width: fit-content;
+                            margin: 3rem auto 1rem;
+                            border-radius: 40px;
+                            padding: 2rem 10rem;
+                            display: block;
+                            color: white;
+                            background-color: $green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.active{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #shopify-section-siteAccess {
+        .siteAccess{
+            padding: 7rem 3rem 4rem;
+            &__container{
+                text-align: center;
+                &__title{
+                    h1 {
+                        font-size: 2.2rem;
+                        margin-bottom: 1rem;
+                    }
+                    p {
+                        font-size: var(--paragraph);
+                    }
+                }
+                &__form{
+                    &__input{
+                        label{
+                            font-size: var(--paragraph);
+                            color: $green;
+                            font-family: 'Poppins', sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
