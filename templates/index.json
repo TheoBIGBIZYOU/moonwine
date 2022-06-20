@@ -23,7 +23,7 @@
         "00481790-37ee-4010-a346-2691f3584fb0": {
           "type": "slide",
           "settings": {
-            "svg_path": "raisin.svg",
+            "svg_path": "card1.svg",
             "color": "#114635",
             "cardTitle": "On trouve  les  vignerons",
             "cardDescr": "On fait le déplacement afin de les rencontrer, de voir la vigne, le mode de production... Mais surtout pour créer un vin exclusive en collaboration avec nous !",
@@ -34,7 +34,7 @@
         "6f84516f-116a-489e-9951-aee75aeb9392": {
           "type": "slide",
           "settings": {
-            "svg_path": "pen.svg",
+            "svg_path": "card2.svg",
             "color": "#b83d42",
             "cardTitle": "Un packaging digne d’une oeuvre",
             "cardDescr": "Chez MoonWine l’art à une place importante car chaque cuvée est représentée graphiquement par un artiste. De quoi rendre votre vin plus exclusive !",
@@ -45,7 +45,7 @@
         "c6c88c08-ae68-4fd6-abf4-fa0c8df3c2f9": {
           "type": "slide",
           "settings": {
-            "svg_path": "box.svg",
+            "svg_path": "card3.svg",
             "color": "#da8953",
             "cardTitle": "Une box de vins naturels mensuels",
             "cardDescr": "Une fois les bouteilles terminées, on les place soignement dans nos box qu’on vous envoie tous les mois. Fini les déceptions, du vin de qualité assuré.",
