@@ -7,6 +7,31 @@
     },
     "headband": {
       "type": "headband",
+      "blocks": {
+        "a1f52df0-2f00-4708-a666-15948591df32": {
+          "type": "slide",
+          "settings": {
+            "textHeadband": "ON CHERCHE POUR VOUS LES MEILLEURS VINS"
+          }
+        },
+        "9286037c-c808-4e33-82d1-3424de586a56": {
+          "type": "slide",
+          "settings": {
+            "textHeadband": "GOûTEZ À DES VINS EXCLUSIFS"
+          }
+        },
+        "3bb17498-bf2e-4ac8-88cf-4ae83b0285c7": {
+          "type": "slide",
+          "settings": {
+            "textHeadband": "ON VOUS ENVOIE UNE BOX TOUS LES DEUX MOIS"
+          }
+        }
+      },
+      "block_order": [
+        "a1f52df0-2f00-4708-a666-15948591df32",
+        "9286037c-c808-4e33-82d1-3424de586a56",
+        "3bb17498-bf2e-4ac8-88cf-4ae83b0285c7"
+      ],
       "settings": {
       }
     },
