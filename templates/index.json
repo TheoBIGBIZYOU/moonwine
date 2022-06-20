@@ -38,8 +38,8 @@
     "boxMois": {
       "type": "boxMois",
       "settings": {
-        "title": "",
-        "subTitle": ""
+        "title": "la box du mois",
+        "subTitle": "Haec dum oriens diu perferret, caeli reserato tepore Constantius consulatu suo septies et Caesaris ter egressus Arelate Valentiam petit, in Gundomadum et Vadomarium fratres Alamannorum reges arma moturus, quorum crebris excursibus vastabantur confines limitibus terrae Gallorum. Gundomadum et Vadomarium fratres Alamannorum reges arma moturus, quorum crebris excursibus vastabantur confines limitibus terrae Gallorum."
       }
     },
     "notreConcept": {
