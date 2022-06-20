@@ -27,9 +27,10 @@
     "cave": {
       "type": "cave",
       "settings": {
-        "caves_title": "",
-        "caves_descr": "",
-        "caves_btn": ""
+        "caves_bg": "shopify:\/\/shop_images\/cave-bg.jpg",
+        "caves_title": "LA CAVE EXCLUSIVE",
+        "caves_descr": "Haec dum oriens diu perferret, caeli reserato tepore Constantius consulatu suo septies et Caesaris ter egressus Arelate Valentiam petit, in Gundomadum et Vadomarium fratres Alamannorum reges arma moturus, quorum crebris excursibus vastabantur confines limitibus terrae Gallorum.",
+        "caves_btn": "VOIR TOUTE LA CAVE"
       }
     },
     "abonnement": {
