@@ -7,55 +7,69 @@
     },
     "headband": {
       "type": "headband",
-      "blocks": {
-        "af75b45d-aab2-4aeb-8f35-b20585e04d5d": {
-          "type": "slide",
-          "settings": {
-            "textHeadband": "ON CHERCHE POUR VOUS LES MEILLEURS VINS"
-          }
-        },
-        "ecd7c437-603e-4eb4-8254-b0a94deed492": {
-          "type": "slide",
-          "settings": {
-            "textHeadband": "GOûTEZ À DES VINS EXCLUSIFS"
-          }
-        },
-        "6f3c1b35-3d4e-466e-8c3c-5f1555283af7": {
-          "type": "slide",
-          "settings": {
-            "textHeadband": "ON VOUS ENVOIE UNE BOX TOUS LES DEUX MOIS"
-          }
-        }
-      },
-      "block_order": [
-        "af75b45d-aab2-4aeb-8f35-b20585e04d5d",
-        "ecd7c437-603e-4eb4-8254-b0a94deed492",
-        "6f3c1b35-3d4e-466e-8c3c-5f1555283af7"
-      ],
       "settings": {
       }
     },
     "boxMois": {
       "type": "boxMois",
       "settings": {
-        "title": "La box du mois",
-        "subTitle": "Haec dum oriens diu perferret, caeli reserato tepore Constantius consulatu suo septies et Caesaris ter egressus Arelate Valentiam petit, in Gundomadum et Vadomarium fratres Alamannorum reges arma moturus, quorum crebris excursibus vastabantur confines limitibus terrae Gallorum. Gundomadum et Vadomarium fratres Alamannorum reges arma moturus, quorum crebris excursibus vastabantur confines limitibus terrae Gallorum."
+        "title": "",
+        "subTitle": ""
       }
     },
     "notreConcept": {
       "type": "notreConcept",
+      "blocks": {
+        "00481790-37ee-4010-a346-2691f3584fb0": {
+          "type": "slide",
+          "settings": {
+            "svg_path": "raisin.svg",
+            "color": "#114635",
+            "cardTitle": "On trouve  les  vignerons",
+            "cardDescr": "On fait le déplacement afin de les rencontrer, de voir la vigne, le mode de production... Mais surtout pour créer un vin exclusive en collaboration avec nous !",
+            "cardBtn": "VOIR LES VIGNERONS",
+            "cardLink": "shopify:\/\/pages\/contact"
+          }
+        },
+        "6f84516f-116a-489e-9951-aee75aeb9392": {
+          "type": "slide",
+          "settings": {
+            "svg_path": "pen.svg",
+            "color": "#b83d42",
+            "cardTitle": "Un packaging digne d’une oeuvre",
+            "cardDescr": "Chez MoonWine l’art à une place importante car chaque cuvée est représentée graphiquement par un artiste. De quoi rendre votre vin plus exclusive !",
+            "cardBtn": "VOIR LES ARTISTES",
+            "cardLink": "shopify:\/\/collections"
+          }
+        },
+        "c6c88c08-ae68-4fd6-abf4-fa0c8df3c2f9": {
+          "type": "slide",
+          "settings": {
+            "svg_path": "box.svg",
+            "color": "#da8953",
+            "cardTitle": "Une box de vins naturels mensuels",
+            "cardDescr": "Une fois les bouteilles terminées, on les place soignement dans nos box qu’on vous envoie tous les mois. Fini les déceptions, du vin de qualité assuré.",
+            "cardBtn": "VOIR LES ANCIENNES BOX",
+            "cardLink": "shopify:\/\/blogs\/infos"
+          }
+        }
+      },
+      "block_order": [
+        "00481790-37ee-4010-a346-2691f3584fb0",
+        "6f84516f-116a-489e-9951-aee75aeb9392",
+        "c6c88c08-ae68-4fd6-abf4-fa0c8df3c2f9"
+      ],
       "settings": {
-        "title": "",
-        "subTitle": ""
+        "title": "NOTRE CONCEPT",
+        "subTitle": "Chez MoonWine c’est pas compliqué, on vous déniche des pépites, des vins natures fait exclusivement par des vignerons passionnés"
       }
     },
     "cave": {
       "type": "cave",
       "settings": {
-        "caves_bg": "shopify:\/\/shop_images\/cave-bg.jpg",
-        "caves_title": "LA CAVE EXCLUSIVE",
-        "caves_descr": "Haec dum oriens diu perferret, caeli reserato tepore Constantius consulatu suo septies et Caesaris ter egressus Arelate Valentiam petit, in Gundomadum et Vadomarium fratres Alamannorum reges arma moturus, quorum crebris excursibus vastabantur confines limitibus terrae Gallorum.",
-        "caves_btn": "VOIR TOUTE LA CAVE"
+        "caves_title": "",
+        "caves_descr": "",
+        "caves_btn": ""
       }
     },
     "abonnement": {
