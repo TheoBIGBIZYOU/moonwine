@@ -1,0 +1,144 @@
+.abonnements {
+    margin: 10rem auto;
+    &__title {
+        max-width: 56rem;
+        margin: 0 auto;
+        text-align: center;
+        h1 {
+            text-transform: uppercase;
+            font-family: "MolgakFont", sans-serif;
+            font-weight: normal;
+            color: $green;
+            font-size: var(--title);
+        }
+        p {
+            font-size: 1.6rem;
+            font-weight: 300;
+            text-transform: none;
+        }
+    }
+    .swiperMob {
+        .swiper-pagination {
+            display: none;
+            span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+                background: #3F3F3F;
+            }
+        }
+        .abonnements__main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 6rem 0;
+            gap: 3rem;
+            &__indiv {
+                height: fit-content;
+                padding: 4rem 3rem;
+                background-color: #ffffff;
+                border: 1px solid #ece8dd;
+                border-radius: 6.7rem;
+                flex: 33.33%;
+                &__head {
+                    &__top {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        p.title {
+                            font-size: 24px;
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 700;
+                            color: $green;
+                        }
+                        p.populaire{
+                            font-size: 1.2rem;
+                            color: $green;
+                            padding: 1rem 2rem;
+                            background: #FFFFFF;
+                            width: fit-content;
+                            border-radius: 6.7rem;
+                            font-weight: 600;
+                        }
+                    }
+                    .price {
+                        position: relative;
+                        width: fit-content;
+                        p {
+                            color: #000000;
+                            font-weight: normal;
+                            font-size: 4rem;
+                            margin-bottom: 3rem;
+                            text-transform: none;
+                            width: fit-content;
+                        }
+                        span.livraison {
+                            position: absolute;
+                            right: 0;
+                            bottom: -1rem;
+                            font-size: 1.2rem;
+                            font-weight: 300;
+                        }
+                    }
+                }
+                &__list {
+                    ul {
+                        list-style-type: none;
+                        li {
+                            display: flex;
+                            align-items: center;
+                            font-size: 14px;
+                            font-family: "Poppins", sans-serif;
+                            font-weight: 500;
+                            color: $black;
+                        }
+                        li::before {
+                            content: url(./listTypePrimary.svg);
+                            margin-right: 1.5rem;
+                        }
+                    }
+                }
+                a.btn {
+                    display: block;
+                    margin: 3rem 0;
+                    background-color: $green;
+                    font-size: var(--subtitle);
+                    width: 100%;
+                    color: #ffffff;
+                }
+                &:nth-child(2) {
+                    background-color: #ece8dd;
+                    .abonnements__main__indiv__head {
+                        p.title {
+                            color: #b83d42;
+                        }
+                    }
+                    .abonnements__main__indiv__list {
+                        ul {
+                            li::before {
+                                content: url(./listTypeSecondary.svg);
+                                margin-right: 1.5rem;
+                            }
+                        }
+                    }
+                    a.btn {
+                        background-color: #b83d42;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .abonnements {
+        .swiperMob {
+            .swiper-pagination {
+                display: block;
+            }
+            .abonnements__main {
+                gap: 0;
+                &__indiv {
+                    flex: none;
+                }
+            }
+        }
+    }
+}

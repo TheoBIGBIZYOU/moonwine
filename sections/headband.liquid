@@ -1,0 +1,27 @@
+<div class="headband">
+    {% for texte in section.blocks %}
+        <img src="{{ 'logoRond.svg' | asset_url }}" alt="{{ shop.name }}">
+        <p>{{texte.settings.textHeadband}}</p>
+    {% endfor %}
+    <img src="{{ 'logoRond.svg' | asset_url }}" alt="{{ shop.name }}">
+</div>
+
+{% schema %}
+    {
+        "name": "headband",
+        "class": "section-headband",
+        "blocks": [
+            {
+                "name": "Headband",
+                "type": "slide",
+                "settings": [
+            {
+                "type": "text",
+                "id": "textHeadband",
+                "label": "Texte"
+            }
+            ]
+            }
+        ]
+    }
+{% endschema %}

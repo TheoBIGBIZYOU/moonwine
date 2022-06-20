@@ -1,0 +1,184 @@
+.products{
+    &__top{
+        display: flex;
+        width: 75%;
+        margin: 2rem 0 0 auto;
+        justify-content: space-between;
+        &__nbVin{
+            p{
+                color: #FFFFFF;
+                background-color: $green;
+                width: fit-content;
+                padding: 1rem 3rem;
+                border-radius: 1.2rem;
+                font-weight: 600;
+            }
+        }
+        &__filter{
+            select{
+                border: 1px solid black;
+                border-radius: 1.2rem;
+                padding: 1rem 3rem;
+                font-weight: 500;
+            }
+        }
+    }
+    &__container{
+        padding: 2.6rem 0;
+        display: flex;
+        justify-content: space-between;
+        &__filtre{
+            padding: 3rem 2rem;
+            width: 20%;
+            background-color: #FFFFFF;
+            border-radius: 1.2rem;
+            .price{
+                p.title{
+                    font-size: 1.6rem;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    color: $green;
+                }
+                .filter-price{
+                    border: 0;
+                    .container {
+                        position: relative;
+                        width: 100%;
+                        height: 100px;
+                        margin-top: 30px;
+                      }
+                      input[type="range"] {
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        width: 100%;
+                        outline: none;
+                        position: absolute;
+                        margin: auto;
+                        top: 0;
+                        bottom: 0;
+                        background-color: transparent;
+                        pointer-events: none;
+                      }
+                      .slider-track {
+                        width: 100%;
+                        height: 5px;
+                        position: absolute;
+                        margin: auto;
+                        top: 0;
+                        bottom: 0;
+                        border-radius: 5px;
+                      }
+                      input[type="range"]::-webkit-slider-runnable-track {
+                        -webkit-appearance: none;
+                        height: 5px;
+                      }
+                      input[type="range"]::-moz-range-track {
+                        -moz-appearance: none;
+                        height: 5px;
+                      }
+                      input[type="range"]::-ms-track {
+                        appearance: none;
+                        height: 5px;
+                      }
+                      input[type="range"]::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        height: 1.7em;
+                        width: 1.7em;
+                        background-color: #3264fe;
+                        cursor: pointer;
+                        margin-top: -9px;
+                        pointer-events: auto;
+                        border-radius: 50%;
+                      }
+                      input[type="range"]::-moz-range-thumb {
+                        -webkit-appearance: none;
+                        height: 1.7em;
+                        width: 1.7em;
+                        cursor: pointer;
+                        border-radius: 50%;
+                        background-color: #3264fe;
+                        pointer-events: auto;
+                        border: none;
+                      }
+                      input[type="range"]::-ms-thumb {
+                        appearance: none;
+                        height: 1.7em;
+                        width: 1.7em;
+                        cursor: pointer;
+                        border-radius: 50%;
+                        background-color: #3264fe;
+                        pointer-events: auto;
+                      }
+                      input[type="range"]:active::-webkit-slider-thumb {
+                        background-color: #ffffff;
+                        border: 1px solid #3264fe;
+                      }
+                }
+            }
+        }
+        &__list{
+            width: 75%;
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            flex-wrap: wrap;
+            &-card {
+                display: flex;
+                flex-direction: column;
+                flex: 0 0 calc(35% - 3rem);
+                scroll-snap-align: start;
+                border-radius: 1.2rem;
+                overflow: hidden;
+
+                .imgBx {
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 30rem;
+                    text-align: center;
+
+                    a {
+                        img {
+                            width: auto;
+                            max-width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center center;
+                        }
+                    }
+                }
+
+                .content {
+                    flex: 1;
+                    padding: 1rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: end;
+                    gap: 1rem;
+                    background-color: #fff;
+
+                    h2 {
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        color: $green;
+                        font-size: 1.6rem;
+                        margin: .5rem 0;
+                    }
+
+                    p {
+                        font-weight: 800;
+                        color: $green;
+                        font-size: 2rem;
+                    }
+                    .content-left{
+                        p{
+                            font-weight: normal;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

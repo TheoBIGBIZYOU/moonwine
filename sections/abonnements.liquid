@@ -1,0 +1,78 @@
+<section class="abonnements container">
+    <div class="abonnements__title">
+        <h1>Abonnements</h1>
+        <p>Chez MoonWine nous vous proposons 3 types d’abonnements annuels :</p>
+    </div>
+    <div class="swiper swiperMob">
+        <div class="abonnements__main swiper-wrapper">
+            {% for product in collections['Abonnement'].products limit: 3 %}
+            <article class="abonnements__main__indiv swiper-slide">
+                <div class="abonnements__main__indiv__head">
+                    <div class="abonnements__main__indiv__head__top">
+                        <p class="title">{{ product.title }}</p>
+                        {% if product.metafields.custom.populaire == true %}
+                            <p class="populaire">Populaire</p>
+                        {% endif %}
+                    </div>
+                    <div class="price">
+                        <p>{{ product.price | money }}/mois</p>
+                        <span class="livraison">{{ product.metafields.custom.livraison }}</span>
+                    </div>
+                </div>
+                <div class="abonnements__main__indiv__list">
+                    {{product.description}}
+                </div>
+                <a href="#" class="btn">S'ABONNER</a>
+            </article>
+            {% endfor %}
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+{% javascript %}
+    import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js';
+
+    const breakpoint = window.matchMedia( '(min-width:1025px)' );
+    let mySwiper;
+
+    const breakpointChecker = function() {
+         // if larger viewport and multi-row layout needed
+         if ( breakpoint.matches === true ) {
+            // clean up old instances and inline styles when available
+            if ( mySwiper !== undefined ) mySwiper.destroy( true, true );
+            // or/and do nothing
+            return;
+         // else if a small viewport and single column layout needed
+     } else if ( breakpoint.matches === false ) {
+            // fire small viewport version of swiper
+            return enableSwiper();
+        }
+    };
+
+    const enableSwiper = function() {  
+        mySwiper = new Swiper(".swiperMob", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            // autoplay: {
+            //     delay: 4500,
+            //     disableOnInteraction: false,
+            // },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    };
+      // keep an eye on viewport size changes
+      breakpoint.addListener(breakpointChecker);
+      // kickstart
+      breakpointChecker();
+{% endjavascript %}
+
+  {% schema %}
+  {
+    "name": "abonnements",
+    "settings": []
+  }
+{% endschema %}

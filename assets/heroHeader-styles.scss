@@ -1,0 +1,33 @@
+.heroBanner{
+  margin: 7rem 0;
+  &__main{
+    &__title{
+      margin-bottom: 7rem;
+      text-align: center;
+      h1{
+        font-family: 'MolgakFont';
+        font-size: 9.4rem;
+        color: $green;
+        span{
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
+@media screen  and (max-width: 768px){
+  .heroBanner{
+    &__main{
+      &__title{
+        h1{
+          display: flex;
+          flex-direction: column;
+          font-size: 5rem;
+          img{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.headband{
+  background-color: white;
+  padding: 3rem 0;
+  border: 2px solid #EEEEEE;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  white-space: nowrap;
+  overflow-x: scroll;
+  p{
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: $green;
+  }
+}

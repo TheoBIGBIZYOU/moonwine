@@ -1,0 +1,63 @@
+<section class="cave">
+    <div class="head__txt">
+        <h1>{{section.settings.caves_title}}</h1>
+        <p>{{section.settings.caves_descr}}</p>
+    </div>
+    <div class="head__btn">
+        <a href="" class="btn">{{section.settings.caves_btn}}</a>
+    </div>
+    <div class="swiper swiperMob">
+        <div class="cave__products swiper-wrapper">
+            {% for product in collections.frontpage.products limit:3 %}
+            <article class="cave__products-card swiper-slide">
+                <div class="imgBx">
+                    <a href="{{ product.url | within: collection }}">
+                    <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="content__info">
+                        <h2>{{ product.title }}</h2>
+                        <p>{{ product.price | money }}</p>
+                    </div>
+                    {% unless product.available %}<br><h2 class="error">Plus en stock</h2>{% endunless %}
+                    <div class="content__btn">
+                        <a href="{{ product.url | within: collection }}">Voir le produit</a>
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <img src="{{section.settings.caves_bg | img_url: 'master'}}" alt="" class="cave__bg">
+</section>
+
+{% schema %}
+{
+    "name": "Cave exclusive",
+    "class": "section-cave",
+    "settings": [
+        {
+        "type": "image_picker",
+        "id": "caves_bg",
+        "label": "Image de fond de la section"
+        },
+        {
+        "type": "text",
+        "id": "caves_title",
+        "label": "Titre de la section"
+        },
+        {
+        "type": "text",
+        "id": "caves_descr",
+        "label": "Texte de la section"
+        },
+        {
+        "type": "text",
+        "id": "caves_btn",
+        "label": "Texte du bouton de la section"
+        }
+    ]
+}
+{% endschema %}

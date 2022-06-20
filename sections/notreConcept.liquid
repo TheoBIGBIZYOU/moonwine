@@ -1,0 +1,84 @@
+<section class="notreConcept container">
+    <div class="notreConcept__title">
+        <h1>{{ section.settings.title }}</h1>
+        <p>{{ section.settings.subTitle }}</p>
+        <img src="{{ 'concept.svg' | asset_url }}" alt="" class="logo">
+        
+    </div>
+    <div class="swiper swiperMob">
+        <div class="notreConcept__content swiper-wrapper">
+            {% for card in section.blocks %}
+            <article class="notreConcept__content-card swiper-slide">
+                <div class="card__icon" style="background-color: {{card.settings.color}};">
+                    <img src="{{ card.settings.svg_path | file_url }}">
+                </div>
+                <h2>{{card.settings.cardTitle}}</h2>
+                <p>{{card.settings.cardDescr}}</p>
+                <a href="{{card.settings.cardLink}}" class="btn">{{card.settings.cardBtn}}</a>
+            </article>
+        {% endfor %}
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <img src="{{ 'arrow1.svg' | asset_url }}" alt="" class="arrow">
+    <img src="{{ 'arrow2.svg' | asset_url }}" alt="" class="arrow">
+</section>
+
+{% schema %}
+{
+  "name": "Section concept",
+  "class": "section-concept",
+  "max_blocks": 3,
+  "blocks": [
+     {
+       "name": "concept",
+       "type": "slide",
+       "settings": [
+       {
+        "type": "text",
+        "id": "svg_path",
+        "label": "Icone de la carte"
+        },
+        {
+        "type": "color",
+        "id": "color",
+        "label": "Couleur de font de l'icone",
+        "default": "#114635"
+        },
+       {
+        "type": "text",
+        "id": "cardTitle",
+        "label": "Titre de la carte"
+        },
+        {
+        "type": "text",
+        "id": "cardDescr",
+        "label": "Texte de la carte"
+        },
+        {
+        "type": "text",
+        "id": "cardBtn",
+        "label": "Texte du bouton la carte"
+        },
+        {
+        "type": "url",
+        "id": "cardLink",
+        "label": "Lien du bouton"
+        }
+       ]
+     }
+   ],
+   "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Titre"
+        },
+        {
+            "type": "text",
+            "id": "subTitle",
+            "label": "Sous titre"
+        }
+   ]
+}
+{% endschema %}
