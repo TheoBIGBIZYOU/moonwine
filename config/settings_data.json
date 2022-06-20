@@ -144,8 +144,51 @@
           "padding_top": 36,
           "padding_bottom": 36
         }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "blocks": {
+          "801e1f3c-94ff-40aa-a35a-8798791a3eb5": {
+            "type": "slide",
+            "settings": {
+              "avisClient": "\"AGRÉABLEMENT SURPRIS, ÉTANT FAN DE VINS NATURES JE RECOMMANDE FORTEMENT CETTE BOX.\"",
+              "avisClientSousTitre": "Un client qui nous aime 🍷"
+            }
+          },
+          "44bcd6ed-5b81-41a4-bce2-3e3375e17f8a": {
+            "type": "slide",
+            "settings": {
+              "avisClient": "\"AGRÉABLEMENT SURPRIS, ÉTANT FAN DE VINS NATURES JE RECOMMANDE FORTEMENT CETTE BOX.\"",
+              "avisClientSousTitre": "Un client qui nous aime 🍷"
+            }
+          },
+          "b99b96c7-16c4-4c02-92e1-fbf36db06f2a": {
+            "type": "slide",
+            "settings": {
+              "avisClient": "\"AGRÉABLEMENT SURPRIS, ÉTANT FAN DE VINS NATURES JE RECOMMANDE FORTEMENT CETTE BOX.\"",
+              "avisClientSousTitre": "Un client qui nous aime 🍷"
+            }
+          }
+        },
+        "block_order": [
+          "801e1f3c-94ff-40aa-a35a-8798791a3eb5",
+          "44bcd6ed-5b81-41a4-bce2-3e3375e17f8a",
+          "b99b96c7-16c4-4c02-92e1-fbf36db06f2a"
+        ],
+        "settings": {
+          "title": "HEY ! INSCRIvez-vous À LA NEWSLETTER",
+          "subTitle": "Promis on n’envoie pas des news tous les jours ! Juste une tous les 29 jours, pour chaque cycle de lunaison."
+        }
+      },
+      "siteAccess": {
+        "type": "siteAccess",
+        "settings": {
+        }
       }
-    }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {
