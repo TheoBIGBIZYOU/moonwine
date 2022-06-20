@@ -1,22 +1,41 @@
 {
   "sections": {
-    "abonnement": {
-      "type": "abonnements"
-    },
-    "cave": {
-      "type": "cave"
-    },
-    "notreConcept": {
-      "type": "notreConcept"
-    },
-    "boxMois": {
-      "type": "boxMois"
+    "heroHeader": {
+      "type": "heroHeader",
+      "settings": {
+      }
     },
     "headband": {
-      "type": "headband"
+      "type": "headband",
+      "settings": {
+      }
     },
-    "heroHeader": {
-      "type": "heroHeader"
+    "boxMois": {
+      "type": "boxMois",
+      "settings": {
+        "title": "La box du mois",
+        "subTitle": "Haec dum oriens diu perferret, caeli reserato tepore Constantius consulatu suo septies et Caesaris ter egressus Arelate Valentiam petit, in Gundomadum et Vadomarium fratres Alamannorum reges arma moturus, quorum crebris excursibus vastabantur confines limitibus terrae Gallorum. Gundomadum et Vadomarium fratres Alamannorum reges arma moturus, quorum crebris excursibus vastabantur confines limitibus terrae Gallorum."
+      }
+    },
+    "notreConcept": {
+      "type": "notreConcept",
+      "settings": {
+        "title": "",
+        "subTitle": ""
+      }
+    },
+    "cave": {
+      "type": "cave",
+      "settings": {
+        "caves_title": "",
+        "caves_descr": "",
+        "caves_btn": ""
+      }
+    },
+    "abonnement": {
+      "type": "abonnements",
+      "settings": {
+      }
     }
   },
   "order": [
